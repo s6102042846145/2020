@@ -65,7 +65,7 @@ namespace AHCBL.Dao.Admin
                 cmd.CommandType = CommandType.StoredProcedure;
                 MySqlParameterCollection param = cmd.Parameters;
                 param.Clear();
-                AddSQLParam(param, "@id", Util.NVLInt(model.id));
+                AddSQLParam(param, "@p_id", Util.NVLInt(model.id));
                 AddSQLParam(param, "@name", Util.NVLString(model.name));
                 AddSQLParam(param, "@detail", Util.NVLString(model.detail));
                 AddSQLParam(param, "@member_id", Util.NVLInt(1));

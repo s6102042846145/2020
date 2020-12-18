@@ -1,0 +1,106 @@
+﻿@model IEnumerable<AHCBL.Dto.Admin.CategoryListDto>
+@{
+    ViewBag.Title = "Category List";
+}
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.min_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.max_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.charging_time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.energy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.revenue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.day)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.win_count)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.win_max_price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ca_order)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ca_use)
+        </th>
+        <th></th>
+    </tr>
+
+    @if (Model != null && Model.Count() != 0)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.min_price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.max_price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.charging_time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.energy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.revenue)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.day)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.win_count)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.win_max_price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ca_order)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ca_use)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Add", "Create") |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr>
+            <td colspan="13" class="text-center">
+                No Data !!
+            </td>
+        </tr>
+    }
+</table>

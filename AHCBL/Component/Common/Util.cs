@@ -47,6 +47,15 @@ namespace AHCBL.Component.Common
 
             return value;
         }
+        public static bool NVLBool(object obj)
+        {
+            bool value = false;
+            if (obj != null && obj != DBNull.Value && obj.ToString() != "")
+            {
+                value = true;
+            }
 
+            return value;
+        }
     }
 }
