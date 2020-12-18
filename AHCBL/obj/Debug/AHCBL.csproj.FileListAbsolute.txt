@@ -1,0 +1,10 @@
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\bin\Debug\AHCBL.dll
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\bin\Debug\AHCBL.pdb
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\obj\Debug\AHCBL.csprojAssemblyReference.cache
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\obj\Debug\AHCBL.csproj.CoreCompileInputs.cache
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\obj\Debug\AHCBL.dll
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\obj\Debug\AHCBL.pdb
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\bin\Debug\AHCBL.dll.config
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\bin\Debug\MySql.Data.dll
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\bin\Debug\MySQLConnection.dll
+D:\2020\MLK_DEV\AHC_MLK\AHCBL\obj\Debug\AHCBL.csproj.CopyComplete
