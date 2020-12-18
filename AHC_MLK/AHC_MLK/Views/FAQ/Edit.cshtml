@@ -1,10 +1,12 @@
 ﻿@model AHCBL.Dto.Admin.FAQDto
-
+@{
+    ViewBag.Title = "FAQ";
+}
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>FAQDto</h4>
         <hr />

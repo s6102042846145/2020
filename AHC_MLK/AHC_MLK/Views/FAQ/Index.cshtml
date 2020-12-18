@@ -1,5 +1,7 @@
 ﻿@model IEnumerable<AHCBL.Dto.Admin.FAQDto>
-
+@{
+    ViewBag.Title = "FAQ";
+}
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -30,9 +32,11 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.name)
                 </td>
-                <td>0
+                <td>
+                    0
                 </td>
-                <td>0
+                <td>
+                    0
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
