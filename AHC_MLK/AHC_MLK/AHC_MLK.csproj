@@ -120,8 +120,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Admin\FAQController.cs" />
+    <Compile Include="Controllers\Admin\SendEmailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MemberListController.cs" />
+    <Compile Include="Controllers\Admin\MemberListController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1983,6 +1985,12 @@
     <Content Include="Views\MemberList\Create.cshtml" />
     <Content Include="Views\MemberList\Edit.cshtml" />
     <Content Include="Views\MemberList\Index.cshtml" />
+    <Content Include="Views\SendEmail\Create.cshtml" />
+    <Content Include="Views\SendEmail\Index.cshtml" />
+    <Content Include="Views\SendEmail\Edit.cshtml" />
+    <Content Include="Views\FAQ\Index.cshtml" />
+    <Content Include="Views\FAQ\Create.cshtml" />
+    <Content Include="Views\FAQ\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AHCBL\AHCBL.csproj">

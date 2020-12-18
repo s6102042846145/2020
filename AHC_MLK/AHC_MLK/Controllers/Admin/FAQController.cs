@@ -6,33 +6,29 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AHC_MLK.Controllers
+namespace AHC_MLK.Controllers.Admin
 {
-    public class MemberListController : Controller
+    public class FAQController : Controller
     {
-        // GET: MemberList
+        // GET: FAQ
         public ActionResult Index()
         {
-            return View(MemberListDao.Instance.GetMemberList());
-            //return View();
+            return View(FAQDao.Instance.GetFAQ());
         }
-
-        // GET: MemberList/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: MemberList/Create
         [HttpPost]
-        public ActionResult Create(MemberListDto Member)
+        public ActionResult Create(FAQDto model)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
 
-                    string result = MemberListDao.Instance.SaveMember(Member, "add");
+                    string result = FAQDao.Instance.SaveFAQ(model, "add");
                     if (result != "OK")
                     {
                         ViewBag.Message = result;
@@ -54,20 +50,17 @@ namespace AHC_MLK.Controllers
                 return View();
             }
         }
-
-        // GET: MemberList/Edit/5
         public ActionResult Edit(int id)
         {
-            return View(MemberListDao.Instance.GetMemberList().Find(smodel => smodel.id == id));
+            return View(FAQDao.Instance.GetFAQ().Find(smodel => smodel.id == id));
         }
 
-        // POST: MemberList/Edit/5
         [HttpPost]
-        public ActionResult Edit(MemberListDto model)
+        public ActionResult Edit(FAQDto model)
         {
             try
             {
-                string result = MemberListDao.Instance.SaveMember(model, "edit");
+                string result = FAQDao.Instance.SaveFAQ(model, "edit");
                 if (result != "OK")
                 {
                     ViewBag.Message = result;
@@ -82,14 +75,12 @@ namespace AHC_MLK.Controllers
             {
                 return View();
             }
-        }
-
-        // GET: MemberList/Delete/5      
-        public ActionResult Delete(MemberListDto model)
+        }  
+        public ActionResult Delete(FAQDto model)
         {
             try
             {
-                string result = MemberListDao.Instance.SaveMember(model, "del");
+                string result = FAQDao.Instance.SaveFAQ(model, "del");
                 if (result == "OK")
                 {
                     ViewBag.Message = "Student Deleted Successfully";

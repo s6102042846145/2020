@@ -38,7 +38,8 @@ namespace AHCBL.Dao.Admin
                         new FAQDto
                         {
                             id = Util.NVLInt(dr["id"]),
-                            name = Util.NVLString(dr["name"])
+                            name = Util.NVLString(dr["name"]),
+                            faq_order = Util.NVLInt(dr["faq_order"])
                         });
                 }
 
@@ -58,7 +59,7 @@ namespace AHCBL.Dao.Admin
             try
             {
                 conn = CreateConnection();
-                MySqlCommand cmd = new MySqlCommand("PD007_SAVE_FAQ", conn);
+                MySqlCommand cmd = new MySqlCommand("PD008_SAVE_FAQ", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 MySqlParameterCollection param = cmd.Parameters;
                 param.Clear();
@@ -70,7 +71,7 @@ namespace AHCBL.Dao.Admin
                 AddSQLParam(param, "@detail_tail", Util.NVLString(model.detail_tail));
                 AddSQLParam(param, "@detail_hot_mobile", Util.NVLString(model.detail_hot_mobile));
                 AddSQLParam(param, "@detail_tail_mobile", Util.NVLString(model.detail_tail_mobile));
-                AddSQLParam(param, "@faq_order", Util.NVLString(model.faq_order));
+                AddSQLParam(param, "@faq_order", Util.NVLInt(model.faq_order));
                 AddSQLParam(param, "@member_id", Util.NVLInt(1));
                 AddSQLParam(param, "@active", Util.NVLInt(model.active));
                 AddSQLParam(param, "@status", action);
