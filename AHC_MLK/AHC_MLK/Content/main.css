@@ -10682,8 +10682,8 @@ a:focus {
 }
 
 .bg-gradient-primary {
-    background-color: #009688;
-    background-image: linear-gradient(180deg, #009688 10%, #6f6f6f 100%);
+    background-color: #ffffff;
+    background-image: linear-gradient(180deg, #F44336 10%, #6f6f6f 100%);
     background-size: cover;
 }
 
@@ -12166,6 +12166,6 @@ footer.sticky-footer {
         font-size: 0.8rem;
     }
 
-body.sidebar-toggled footer.sticky-footer {
+/*body.sidebar-toggled footer.sticky-footer {
     width: 100%;
-}
+}*/

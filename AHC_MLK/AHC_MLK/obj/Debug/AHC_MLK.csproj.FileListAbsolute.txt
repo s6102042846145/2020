@@ -170,3 +170,7 @@ D:\PROJECT\2020\2020\AHC_MLK\AHC_MLK\bin\AHCBL.dll
 D:\PROJECT\2020\2020\AHC_MLK\AHC_MLK\bin\MySql.Data.dll
 D:\PROJECT\2020\2020\AHC_MLK\AHC_MLK\bin\AHCBL.pdb
 D:\PROJECT\2020\2020\AHC_MLK\AHC_MLK\bin\AHCBL.dll.config
+C:\Users\ADMIN\source\repos\2020-v2\2020\AHC_MLK\AHC_MLK\bin\AHCBL.dll
+C:\Users\ADMIN\source\repos\2020-v2\2020\AHC_MLK\AHC_MLK\bin\MySql.Data.dll
+C:\Users\ADMIN\source\repos\2020-v2\2020\AHC_MLK\AHC_MLK\bin\AHCBL.pdb
+C:\Users\ADMIN\source\repos\2020-v2\2020\AHC_MLK\AHC_MLK\bin\AHCBL.dll.config
