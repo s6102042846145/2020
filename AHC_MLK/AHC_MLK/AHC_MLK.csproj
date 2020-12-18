@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Admin\ContentListController.cs" />
     <Compile Include="Controllers\Admin\FAQController.cs" />
     <Compile Include="Controllers\Admin\SendEmailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -1991,6 +1992,9 @@
     <Content Include="Views\FAQ\Index.cshtml" />
     <Content Include="Views\FAQ\Create.cshtml" />
     <Content Include="Views\FAQ\Edit.cshtml" />
+    <Content Include="Views\ContentList\Index.cshtml" />
+    <Content Include="Views\ContentList\Create.cshtml" />
+    <Content Include="Views\ContentList\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AHCBL\AHCBL.csproj">

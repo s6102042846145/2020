@@ -100,7 +100,7 @@ namespace AHCBL.Dao.Admin
                 cmd.CommandType = CommandType.StoredProcedure;
                 MySqlParameterCollection param = cmd.Parameters;
                 param.Clear();
-                AddSQLParam(param, "@id", Util.NVLInt(model.id));
+                AddSQLParam(param, "@p_id", Util.NVLInt(model.id));
                 AddSQLParam(param, "@username", Util.NVLString(model.username));
                 //AddSQLParam(param, "@password", Util.NVLString(model.password));
                 AddSQLParam(param, "@password", action == "del" ? "" : Util.NVLString(DataCryptography.Encrypt(model.password)));
