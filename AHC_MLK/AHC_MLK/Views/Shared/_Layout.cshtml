@@ -164,15 +164,16 @@
                 </ul>
             </nav>
             <!-- End of Topbar -->
+
+            <div id="content-wrapper" class="d-flex flex-column">
+                @RenderBody()
+                <hr />
+                <footer>
+                    <p style="margin-left:5px;">&copy; @DateTime.Now.Year - AHC</p>
+                </footer>
+            </div>
         </div>
         <!-- End of Main Content -->
-        <div id="content-wrapper" class="d-flex flex-column">
-            @RenderBody()
-            <hr />
-            <footer>
-                <p style="margin-left:5px;">&copy; @DateTime.Now.Year - AHC</p>
-            </footer>
-        </div>
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
 
