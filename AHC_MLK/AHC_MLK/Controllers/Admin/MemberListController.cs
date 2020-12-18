@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AHC_MLK.Controllers
+namespace AHC_MLK.Admin.Controllers
 {
     public class MemberListController : Controller
     {
