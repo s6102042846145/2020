@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MemberListController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1979,6 +1980,15 @@
     <Content Include="vendor\Scripts\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="vendor\Scripts\jquery\jquery.min.map" />
     <Content Include="vendor\Scripts\jquery\jquery.slim.min.map" />
+    <Content Include="Views\MemberList\Create.cshtml" />
+    <Content Include="Views\MemberList\Edit.cshtml" />
+    <Content Include="Views\MemberList\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AHCBL\AHCBL.csproj">
+      <Project>{308d9d58-0ced-45db-90e7-c38a35814063}</Project>
+      <Name>AHCBL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
