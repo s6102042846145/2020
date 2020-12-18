@@ -67,6 +67,8 @@ namespace AHCBL.Dao.Admin
                 param.Clear();
                 AddSQLParam(param, "@id", Util.NVLInt(model.id));
                 AddSQLParam(param, "@name", Util.NVLString(model.name));
+                AddSQLParam(param, "@detail", Util.NVLString(model.detail));
+                AddSQLParam(param, "@member_id", Util.NVLInt(1));
                 AddSQLParam(param, "@active", Util.NVLInt(model.active));
                 AddSQLParam(param, "@status", action);
 
