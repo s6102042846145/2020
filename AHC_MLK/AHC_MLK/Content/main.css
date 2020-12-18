@@ -12172,9 +12172,9 @@ footer.sticky-footer {
         font-size: 0.8rem;
     }
 
-/*body.sidebar-toggled footer.sticky-footer {
+body.sidebar-toggled footer.sticky-footer {
     width: 100%;
-<<<<<<< HEAD
+
 }
 
 table {
@@ -12193,6 +12193,6 @@ tbody {
         width: 100%;
         table-layout: fixed;
     }
-=======
-}*/
->>>>>>> master
+
+}
+
