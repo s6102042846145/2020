@@ -148,7 +148,7 @@ sup {
 }
 
 a {
-    color: #4e73df;
+    color: #000000;
     text-decoration: none;
     background-color: transparent;
 }
@@ -210,6 +210,8 @@ caption {
 }
 
 th {
+    color: #fff;
+    background: #009688;
     text-align: inherit;
     text-align: -webkit-match-parent;
 }
@@ -1657,9 +1659,9 @@ pre {
 }
 
 .table {
-    width: 100%;
     margin-bottom: 1rem;
-    color: #858796;
+    display: block;
+    overflow: auto;
 }
 
     .table th,
@@ -8152,7 +8154,7 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-    margin-bottom: 1.5rem !important;
+    /* margin-bottom: 1.5rem !important; */
 }
 
 .ml-4,
@@ -10683,7 +10685,11 @@ a:focus {
 
 .bg-gradient-primary {
     background-color: #ffffff;
+<<<<<<< HEAD
+    background-image: linear-gradient(180deg, #009688 10%, #6f6f6f 100%);
+=======
     background-image: linear-gradient(180deg, #F44336 10%, #6f6f6f 100%);
+>>>>>>> master
     background-size: cover;
 }
 
@@ -12168,4 +12174,25 @@ footer.sticky-footer {
 
 /*body.sidebar-toggled footer.sticky-footer {
     width: 100%;
+<<<<<<< HEAD
+}
+
+table {
+    display: block;
+    overflow: auto;
+}
+
+tbody {
+    display: block;
+    max-height: 690px;
+    overflow: auto;
+}
+
+    thead, tbody tr {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+    }
+=======
 }*/
+>>>>>>> master
