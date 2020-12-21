@@ -120,10 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-<<<<<<< HEAD
     <Compile Include="Controllers\Admin\CategoryListController.cs" />
-=======
->>>>>>> master
     <Compile Include="Controllers\Admin\ContentListController.cs" />
     <Compile Include="Controllers\Admin\FAQController.cs" />
     <Compile Include="Controllers\Admin\SendEmailController.cs" />
@@ -1999,12 +1996,9 @@
     <Content Include="Views\ContentList\Index.cshtml" />
     <Content Include="Views\ContentList\Create.cshtml" />
     <Content Include="Views\ContentList\Edit.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\CategoryList\Index.cshtml" />
     <Content Include="Views\CategoryList\Create.cshtml" />
     <Content Include="Views\CategoryList\Edit.cshtml" />
-=======
->>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AHCBL\AHCBL.csproj">
