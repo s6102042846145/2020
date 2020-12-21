@@ -1,0 +1,59 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<AHCBL.Dto.Admin.ItemListDto>
+@{
+    ViewBag.Title = "Item List";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+    @using (Html.BeginForm("Index", "ItemList", FormMethod.Post))
+    {
+        <input type="text" name="search" value="@TempData["search"]" placeholder="search.." />
+        <input type="submit" name="submit" value="Search" />
+    }
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.First().category_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.First().name)
+        </th>
+        <th></th>
+    </tr>
+    @if (Model.Count() == 0)
+    {
+        <tr>
+            <th colspan="3" class="text-center">No data !!</th>
+        </tr>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.category_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+    }
+</table>
+@Html.PagedListPager(Model, Page => Url.Action("Index", "ItemList", new { Page, search = Request.QueryString["search"] }))

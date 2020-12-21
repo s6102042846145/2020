@@ -8,14 +8,6 @@ D:\2020\MLK_DEV\AHC_MLK\AHCBL\bin\Debug\AHCBL.dll.config
 D:\2020\MLK_DEV\AHC_MLK\AHCBL\bin\Debug\MySql.Data.dll
 D:\2020\MLK_DEV\AHC_MLK\AHCBL\bin\Debug\MySQLConnection.dll
 D:\2020\MLK_DEV\AHC_MLK\AHCBL\obj\Debug\AHCBL.csproj.CopyComplete
-D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.dll.config
-D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.dll
-D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.pdb
-D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csprojAssemblyReference.cache
-D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csproj.CoreCompileInputs.cache
-D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csproj.CopyComplete
-D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.dll
-D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.pdb
 C:\Users\ADMIN\source\repos\2020-v2\2020\AHCBL\bin\Debug\AHCBL.dll.config
 C:\Users\ADMIN\source\repos\2020-v2\2020\AHCBL\bin\Debug\AHCBL.dll
 C:\Users\ADMIN\source\repos\2020-v2\2020\AHCBL\bin\Debug\AHCBL.pdb
@@ -24,3 +16,11 @@ C:\Users\ADMIN\source\repos\2020-v2\2020\AHCBL\obj\Debug\AHCBL.csproj.CoreCompil
 C:\Users\ADMIN\source\repos\2020-v2\2020\AHCBL\obj\Debug\AHCBL.csproj.CopyComplete
 C:\Users\ADMIN\source\repos\2020-v2\2020\AHCBL\obj\Debug\AHCBL.dll
 C:\Users\ADMIN\source\repos\2020-v2\2020\AHCBL\obj\Debug\AHCBL.pdb
+D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.dll.config
+D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.dll
+D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.pdb
+D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csprojAssemblyReference.cache
+D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csproj.CoreCompileInputs.cache
+D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csproj.CopyComplete
+D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.dll
+D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.pdb

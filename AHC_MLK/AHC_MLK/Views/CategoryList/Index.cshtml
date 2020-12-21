@@ -52,25 +52,25 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.code)
+                    @Html.EditorFor(modelItem => item.code)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.name)
+                    @Html.EditorFor(modelItem => item.name)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.min_price)
+                    @Html.EditorFor(modelItem => item.min_price)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.max_price)
+                    @Html.EditorFor(modelItem => item.max_price)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.charging_time)
+                    @Html.EditorFor(modelItem => item.charging_time)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.energy)
+                    @Html.EditorFor(modelItem => item.energy)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.revenue)
+                    @Html.EditorFor(modelItem => item.revenue)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.day)
@@ -85,7 +85,7 @@
                     @Html.DisplayFor(modelItem => item.ca_order)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.ca_use)
+                    @Html.DisplayFor(modelItem => item.ca_use)                    
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { id = item.id }) |

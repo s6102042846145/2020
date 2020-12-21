@@ -57,12 +57,14 @@
     <Compile Include="Dao\Admin\CategoryListDao.cs" />
     <Compile Include="Dao\Admin\ContentListDao.cs" />
     <Compile Include="Dao\Admin\FAQDao.cs" />
+    <Compile Include="Dao\Admin\ItemListDao.cs" />
     <Compile Include="Dao\Admin\MemberListDao.cs" />
     <Compile Include="Dao\Admin\SendEmailDao.cs" />
     <Compile Include="Dao\BaseDao.cs" />
     <Compile Include="Dto\Admin\CategoryListDto.cs" />
     <Compile Include="Dto\Admin\ContentListDto.cs" />
     <Compile Include="Dto\Admin\FAQDto.cs" />
+    <Compile Include="Dto\Admin\ItemListDto.cs" />
     <Compile Include="Dto\Admin\MemberListDto.cs" />
     <Compile Include="Dto\Admin\SendEmailDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
