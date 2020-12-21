@@ -133,6 +133,7 @@
     <Compile Include="Controllers\Admin\SendEmailController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Admin\MemberListController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2010,6 +2011,7 @@
     <Content Include="Views\ItemList\Index.cshtml" />
     <Content Include="Views\ItemList\Create.cshtml" />
     <Content Include="Views\ItemList\Edit.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AHCBL\AHCBL.csproj">

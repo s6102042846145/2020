@@ -51,9 +51,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Component\Common\DataCryptography.cs" />
+    <Compile Include="Component\Common\EUser.cs" />
     <Compile Include="Component\Common\Form.cs" />
     <Compile Include="Component\Common\TypeConvertor.cs" />
     <Compile Include="Component\Common\Util.cs" />
+    <Compile Include="Component\Common\Varible.cs" />
     <Compile Include="Dao\Admin\CategoryListDao.cs" />
     <Compile Include="Dao\Admin\ContentListDao.cs" />
     <Compile Include="Dao\Admin\FAQDao.cs" />
@@ -61,12 +63,14 @@
     <Compile Include="Dao\Admin\MemberListDao.cs" />
     <Compile Include="Dao\Admin\SendEmailDao.cs" />
     <Compile Include="Dao\BaseDao.cs" />
+    <Compile Include="Dao\LoginDao.cs" />
     <Compile Include="Dto\Admin\CategoryListDto.cs" />
     <Compile Include="Dto\Admin\ContentListDto.cs" />
     <Compile Include="Dto\Admin\FAQDto.cs" />
     <Compile Include="Dto\Admin\ItemListDto.cs" />
     <Compile Include="Dto\Admin\MemberListDto.cs" />
     <Compile Include="Dto\Admin\SendEmailDto.cs" />
+    <Compile Include="Dto\LoginDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

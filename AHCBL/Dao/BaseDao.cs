@@ -127,6 +127,37 @@ namespace AHCBL.Dao
             }
             return obj;
         }
+        protected DataTable GetStoredProc(string sql, string[] condFields, object[] vals)
+        {
+            DataTable dt = new DataTable();
+            using (MySqlConnection conn = CreateConnection())
+            {
+                conn.Open();
+                dt = GetStoredProc(sql, condFields, vals, conn);
+            }
+
+            return dt;
+        }
+        protected DataTable GetStoredProc(string sql, string[] condFields, object[] vals, MySqlConnection conn)
+        {
+            DataTable dt = new DataTable();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            adapter.SelectCommand = conn.CreateCommand();
+            adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+            adapter.SelectCommand.CommandText = sql;
+            adapter.SelectCommand.CommandTimeout = CommandTimeoutSecond;
+
+            MySqlParameterCollection param = adapter.SelectCommand.Parameters;
+            param.Clear();
+            for (int i = 0; i < condFields.Length; i++)
+            {
+                AddSQLParam(param, condFields[i], vals[i]);
+            }
+            adapter.Fill(dt);
+
+            return dt;
+        }
 
     }
 }
