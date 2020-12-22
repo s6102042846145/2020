@@ -1,4 +1,5 @@
-﻿using AHCBL.Dao.Admin;
+﻿using AHCBL.Component.Common;
+using AHCBL.Dao.Admin;
 using AHCBL.Dto.Admin;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,9 @@ namespace AHC_MLK.Controllers.Admin
         // GET: ContentList
         public ActionResult Index()
         {
+            //if (!Varible.User.UserID) { 
+                
+            //}
             return View(ContentListDao.Instance.GetDataList());
         }
 
