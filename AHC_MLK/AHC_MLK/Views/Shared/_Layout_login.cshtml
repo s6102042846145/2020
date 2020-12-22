@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - ADMIN</title>
+    <link rel="icon" href="/vendor/images/logo.ico" type="image/x-icon" sizes="16x16">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    @Styles.Render("~/Content/style.css")
+    @Styles.Render("~/Content/main.css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="page-top">
+    
+        <div id="content-wrapper" class="d-flex flex-column">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p style="margin-left:5px;">&copy; @DateTime.Now.Year - AHC</p>
+            </footer>
+        </div>
+        <!-- End of Main Content -->
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+
+        @Scripts.Render("~/vendor/Scripts/jquery/jquery.min.js")
+        @Scripts.Render("~/vendor/Scripts/bootstrap/js/bootstrap.bundle.min.js")
+        @Scripts.Render("~/vendor/Scripts/bootstrap/js/sb-admin-2.min.js")
+        @Scripts.Render("~/vendor/Scripts/jquery-easing/jquery.easing.min.js")
+        @Scripts.Render("~/vendor/Scripts/sb-admin-2.js")
+        @Scripts.Render("~/vendor/Scripts/sb-admin-2.min.js")
+
+        @RenderSection("scripts", required: false)
+
+
+</body>
+</html>

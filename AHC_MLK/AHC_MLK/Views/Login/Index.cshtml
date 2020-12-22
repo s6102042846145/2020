@@ -1,6 +1,7 @@
 ﻿@model AHCBL.Dto.LoginDto
 @{
     ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout_login.cshtml";
 }
 
 @using (Html.BeginForm())
@@ -15,7 +16,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.username, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.EditorFor(model => model.username, new { htmlAttributes = new { @class = "form-control", placeholder = "ID" } })
             @Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -23,7 +24,7 @@
     <div class="form-group">
         @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.PasswordFor(model => model.password, new { @class = "form-control", placeholder = "Password" })
             @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
         </div>
     </div>
