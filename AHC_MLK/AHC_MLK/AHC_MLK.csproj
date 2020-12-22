@@ -1838,7 +1838,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\BoardList\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -2015,6 +2014,9 @@
     <Content Include="Views\ItemList\Edit.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Shared\_Layout_login.cshtml" />
+    <Content Include="Views\BoardList\Index.cshtml" />
+    <Content Include="Views\BoardList\Create.cshtml" />
+    <Content Include="Views\BoardList\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AHCBL\AHCBL.csproj">

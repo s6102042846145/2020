@@ -1,0 +1,104 @@
+﻿@model IEnumerable<AHCBL.Dto.Admin.BoardListDto>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_table)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.grp_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_mobile_subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_device)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.grp_device)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.all_device)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.category_list)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.use_category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.grp_category_list)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.all_category_list)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_admin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.grp_admin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.all_admin)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_table)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.grp_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_mobile_subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_device)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.grp_device)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.all_device)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.category_list)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.use_category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.grp_category_list)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.all_category_list)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_admin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.grp_admin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.all_admin)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
