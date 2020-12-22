@@ -126,6 +126,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\Admin\BoardListController.cs" />
     <Compile Include="Controllers\Admin\CategoryListController.cs" />
     <Compile Include="Controllers\Admin\ContentListController.cs" />
     <Compile Include="Controllers\Admin\FAQController.cs" />
@@ -1837,6 +1838,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\BoardList\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -56,6 +56,7 @@
     <Compile Include="Component\Common\TypeConvertor.cs" />
     <Compile Include="Component\Common\Util.cs" />
     <Compile Include="Component\Common\Varible.cs" />
+    <Compile Include="Dao\Admin\BoardListDao.cs" />
     <Compile Include="Dao\Admin\CategoryListDao.cs" />
     <Compile Include="Dao\Admin\ContentListDao.cs" />
     <Compile Include="Dao\Admin\FAQDao.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Dao\Admin\SendEmailDao.cs" />
     <Compile Include="Dao\BaseDao.cs" />
     <Compile Include="Dao\LoginDao.cs" />
+    <Compile Include="Dto\Admin\BoardListDto.cs" />
     <Compile Include="Dto\Admin\CategoryListDto.cs" />
     <Compile Include="Dto\Admin\ContentListDto.cs" />
     <Compile Include="Dto\Admin\FAQDto.cs" />
