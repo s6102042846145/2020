@@ -7,8 +7,8 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <h4>MemberListDto</h4>
+    <div class="form-horizontal" >
+        <h4 style="margin-left:15px; margin-top:10px;">정보 수정 / แก้ไขข้อมูล</h4>
         <hr />
         <h5>@ViewBag.Message</h5>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })

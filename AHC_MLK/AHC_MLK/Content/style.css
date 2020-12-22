@@ -514,6 +514,7 @@ pre {
         max-width: 540px
     }
 }
+
 @media (max-width:576px) {
     #tHead {
         display: none;
@@ -9906,9 +9907,6 @@ a:focus {
 }
 
     #wrapper #content-wrapper {
-        background-color: #f8f9fc;
-        width: 100%;
-        overflow-x: hidden
     }
 
         #wrapper #content-wrapper #content {
@@ -11477,4 +11475,32 @@ footer.sticky-footer {
 
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
+}
+
+.form-horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 25px;
+    padding: 11px 7px;
+}
+
+.width1100 {
+    padding: 30px 5px 100px 5px;
+    box-shadow: 0 0 53px #00000063;
+    border-radius: 5px;
+    color: #000000;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.log {
+    background: #1cc88a;
+    width:125px;
+}
+.login-theme {
+    margin-top:80px;
+    margin-left:10px;
+    margin-right:10px;
 }
