@@ -19,8 +19,8 @@ C:\Users\ADMIN\source\repos\2020-v2\2020\AHCBL\obj\Debug\AHCBL.pdb
 D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.dll.config
 D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.dll
 D:\PROJECT\2020\2020\AHCBL\bin\Debug\AHCBL.pdb
-D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csprojAssemblyReference.cache
 D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csproj.CoreCompileInputs.cache
 D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csproj.CopyComplete
 D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.dll
 D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.pdb
+D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csprojAssemblyReference.cache

@@ -35,6 +35,7 @@ namespace AHCBL.Component.Common
                     {
                         _user = new EUser
                         {
+                            //member_id
                             UserID = Environment.UserName,
                             UserIP = Environment.MachineName
                         };

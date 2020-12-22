@@ -14,7 +14,7 @@ namespace AHCBL.Dao.Admin
     {
         private MySqlConnection conn;
         private DataTable dt;
-        public List<ContentListDto> GetContentList()
+        public List<ContentListDto> GetDataList()
         {
             try
             {
@@ -62,7 +62,7 @@ namespace AHCBL.Dao.Admin
         }
 
 
-        public string SaveContentList(ContentListDto model, string action)
+        public string SaveDataList(ContentListDto model, string action)
         {
             string result = "OK";
             try

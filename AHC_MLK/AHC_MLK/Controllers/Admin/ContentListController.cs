@@ -13,7 +13,7 @@ namespace AHC_MLK.Controllers.Admin
         // GET: ContentList
         public ActionResult Index()
         {
-            return View(ContentListDao.Instance.GetContentList());
+            return View(ContentListDao.Instance.GetDataList());
         }
 
         // GET: ContentList/Details/5
@@ -37,7 +37,7 @@ namespace AHC_MLK.Controllers.Admin
                 if (ModelState.IsValid)
                 {
 
-                    string result = ContentListDao.Instance.SaveContentList(model, "add");
+                    string result = ContentListDao.Instance.SaveDataList(model, "add");
                     if (result != "OK")
                     {
                         ViewBag.Message = result;
@@ -63,7 +63,7 @@ namespace AHC_MLK.Controllers.Admin
         // GET: ContentList/Edit/5
         public ActionResult Edit(int id)
         {
-            return View(ContentListDao.Instance.GetContentList().Find(smodel => smodel.id == id));
+            return View(ContentListDao.Instance.GetDataList().Find(smodel => smodel.id == id));
         }
 
         // POST: ContentList/Edit/5
@@ -72,7 +72,7 @@ namespace AHC_MLK.Controllers.Admin
         {
             try
             {
-                string result = ContentListDao.Instance.SaveContentList(model, "edit");
+                string result = ContentListDao.Instance.SaveDataList(model, "edit");
                 if (result != "OK")
                 {
                     ViewBag.Message = result;
@@ -93,7 +93,7 @@ namespace AHC_MLK.Controllers.Admin
         {
             try
             {
-                string result = ContentListDao.Instance.SaveContentList(model, "del");
+                string result = ContentListDao.Instance.SaveDataList(model, "del");
                 if (result == "OK")
                 {
                     ViewBag.Message = "Student Deleted Successfully";

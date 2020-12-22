@@ -20,20 +20,64 @@ namespace AHCBL.Dao
             }
             return flg;
         }
-        public bool ChkAuthDB(string vUser, ref int member_id, ref string vUName, ref string vCenter, ref string vChannel)
+        //public bool ChkAuthDB(string vUser, string password, ref int member_id, ref string vUName, ref string vCenter, ref string vChannel)
+        //{
+        //    try
+        //    {
+        //        string sql = "PD014_GET_CHK_AUTH_PASS";
+        //        DataTable dt = GetStoredProc(sql, new string[] { "@username", "@password" }, new object[] { vUser, password });
+
+        //        foreach (DataRow dr in dt.Rows)
+        //        {
+        //            list.Add(
+        //            new EUser
+        //            {
+        //                id = Util.NVLInt(dr["id"]),
+        //                code = Util.NVLString(dr["code"]),
+        //                name = Util.NVLString(dr["name"]),
+        //                contents = Util.NVLString(dr["contents"]),
+        //                contents_mobile = Util.NVLString(dr["contents_mobile"]),
+        //                skin_directory = Util.NVLInt(dr["skin_directory"]),
+        //                skin_directory_mobile = Util.NVLInt(dr["skin_directory_mobile"]),
+        //                include_head = Util.NVLString(dr["include_head"]),
+        //                include_tail = Util.NVLString(dr["include_tail"]),
+        //                img_head = Util.NVLString(dr["img_head"]),
+        //                img_tail = Util.NVLString(dr["img_tail"])
+
+        //            });
+        //        }
+
+        //        return list;
+
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        //logger.Error(ex);
+        //        throw ex;
+        //    }
+        //}
+
+
+
+
+
+
+        public bool ChkAuthDB(string vUser, ref int member_id, ref string vUName, ref string member_level, ref string password)
         {
             try
             {
 
                 string sql = "PD013_GET_CHK_AUTH_DB";
-                DataTable dt = GetStoredProc(sql, new string[] { "@username" }, new string[] { vUser });
+                DataTable dt = GetStoredProc(sql, new string[] { "@USER_ID" }, new string[] { vUser });
                 //DataTable dt = GetDataTable(sql, "@USER_ID", vUser);
                 if (dt.Rows.Count > 0)
                 {
                     member_id = Util.NVLInt(dt.Rows[0]["id"]);
                     vUName = Util.NVLString(dt.Rows[0]["username"]);
-                    vCenter = Util.NVLString(dt.Rows[0]["fullname"]);
-                    vChannel = Util.NVLString(dt.Rows[0]["member_level"]);
+                    password = Util.NVLString(dt.Rows[0]["password"]);
+                    member_level = Util.NVLString(dt.Rows[0]["member_level"]);
+                    
                     return true;
                 }
                 else
@@ -52,7 +96,7 @@ namespace AHCBL.Dao
             try
             {
                 string sql = "PD014_GET_CHK_AUTH_PASS";
-                DataTable dt = GetStoredProc(sql, new string[] { "@username", "@password" }, new object[] { vUser, password });
+                DataTable dt = GetStoredProc(sql, new string[] { "@USER_ID", "@PASS" }, new object[] { vUser, password });
                 if (dt.Rows.Count > 0)
                 {
                     member_id = Util.NVLInt(dt.Rows[0]["id"]);
