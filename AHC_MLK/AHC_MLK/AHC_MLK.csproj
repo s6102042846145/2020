@@ -2013,6 +2013,10 @@
     <Content Include="Views\ItemList\Edit.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Shared\_Layout_login.cshtml" />
+<<<<<<< HEAD
+=======
+    <Content Include="Views\Login\_ViewStart.cshtml" />
+>>>>>>> master
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\AHCBL\AHCBL.csproj">
