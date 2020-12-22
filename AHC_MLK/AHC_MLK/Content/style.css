@@ -1617,26 +1617,52 @@ pre {
     }
 }
 
-.table {
-    width: 100%;
-    margin-bottom: 1rem;
-    color: #858796
+
+table.table thead th {
+    border-top: 0;
 }
 
-    .table td, .table th {
-        padding: .75rem;
-        vertical-align: top;
-        border-top: 1px solid #e3e6f0
-    }
+table.table th, table.table td {
+    padding-top: 1.1rem;
+    padding-bottom: 1rem;
+    /* width: 200px; */
+}
 
-    .table thead th {
-        vertical-align: bottom;
-        border-bottom: 2px solid #e3e6f0
-    }
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
 
-    .table tbody + tbody {
-        border-top: 2px solid #e3e6f0
-    }
+.table th, .table td {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table th {
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+th {
+    text-align: inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+user agent stylesheet
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #e3e6f0
+}
 
 .table-sm td, .table-sm th {
     padding: .3rem
@@ -11487,7 +11513,7 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .width1100 {
-    padding: 30px 5px 100px 5px;
+    padding: 30px 5px 35px 5px;
     box-shadow: 0 0 53px #00000063;
     border-radius: 5px;
     color: #000000;
@@ -11497,10 +11523,26 @@ body.sidebar-toggled footer.sticky-footer {
 
 .log {
     background: #1cc88a;
-    width:125px;
+    width: 125px;
 }
+
 .login-theme {
     margin-top: 80px;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.width-theme {
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+@media (max-width:576px) {
+    table.table th, table.table td {
+        padding-top: 1.1rem;
+        padding-bottom: 1rem;
+        width: 200px;
+    }
 }
