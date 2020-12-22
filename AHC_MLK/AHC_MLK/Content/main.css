@@ -1660,9 +1660,10 @@ pre {
 }
 
 .table {
+    max-height: 575px;
     margin-bottom: 1rem;
     display: block;
-    overflow: auto;
+    /* overflow-x: auto; */
 }
 
     .table th,
@@ -12181,18 +12182,29 @@ body.sidebar-toggled footer.sticky-footer {
 
 table {
     display: block;
-    overflow: auto;
+    width: 100%;
+    /* overflow-x: auto; */
+    -webkit-overflow-scrolling: touch;
 }
 
 tbody {
     display: block;
     max-height: 690px;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
     thead, tbody tr {
-        display: table;
         width: 100%;
+        display: table;
         table-layout: fixed;
+    }
+
+.tablehor {
+    overflow: auto;
+}
+
+@media (max-width:576px) {
+    table .table th, table.table td {
+        width: 200px !important;
     }
 }

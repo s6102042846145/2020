@@ -14,9 +14,27 @@ namespace AHC_MLK.Controllers.Admin
         // GET: ContentList
         public ActionResult Index()
         {
-            //if (!Varible.User.UserID) { 
-                
+            //if (!Varible.User.UserID)
+            //{
+
             //}
+            if (User.Identity.IsAuthenticated)
+            {
+
+
+                //if (!isAdminUser())
+                //{
+                //    return RedirectToAction("Index", "Home");
+                //}
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+
+
+
             return View(ContentListDao.Instance.GetDataList());
         }
 

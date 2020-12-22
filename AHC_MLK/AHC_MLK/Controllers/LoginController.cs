@@ -1,6 +1,8 @@
 ﻿using AHCBL.Component.Common;
 using AHCBL.Dao;
 using AHCBL.Dto;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -75,6 +77,7 @@ namespace AHC_MLK.Controllers
                 return View();
             }
         }
+        
         private string GetUserIP()
         {
             string ipList = Request.ServerVariables["HTTP_X_FORWARDED_FOR"];
