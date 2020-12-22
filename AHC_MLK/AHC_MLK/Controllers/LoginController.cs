@@ -1,8 +1,6 @@
 ﻿using AHCBL.Component.Common;
 using AHCBL.Dao;
 using AHCBL.Dto;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data;

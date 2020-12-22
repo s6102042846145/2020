@@ -23,4 +23,3 @@ D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csproj.CoreCompileInputs.cache
 D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csproj.CopyComplete
 D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.dll
 D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.pdb
-D:\PROJECT\2020\2020\AHCBL\obj\Debug\AHCBL.csprojAssemblyReference.cache
